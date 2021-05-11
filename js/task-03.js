@@ -18,20 +18,11 @@ const images = [
 
 const galleryRef = document.querySelector('#gallery');
 
-const makeGalleryItems = images.reduce((acc,img) => {
-    
-  return acc += ` <li class = "gallery-item">
+const makeGalleryItems = items.reduce((acc,img) => {
+  return acc += `<li>
     <img src="${img.url}" 
     alt="${img.alt}" 
     width = 350px </li>`
 }, '')
 
 galleryRef.insertAdjacentHTML('beforeend', makeGalleryItems);
-
-// const gallery = options => {
-//   const { url, alt } = options;
-//   return `<li><img src="${url}" alt=${alt} class="item"></li>`;
-// };
-
-// const galleryItem = images.map(gallery).join("");
-// gallerylistEl.insertAdjacentHTML("beforeend", galleryItem);
