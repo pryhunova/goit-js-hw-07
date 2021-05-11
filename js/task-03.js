@@ -18,7 +18,8 @@ const images = [
 
 const galleryRef = document.querySelector('#gallery');
 
-const makeGalleryItems = items.reduce((acc,img) => {
+const makeGalleryItems = items.reduce((acc, img) => {
+  
   return acc += `<li>
     <img src="${img.url}" 
     alt="${img.alt}" 
