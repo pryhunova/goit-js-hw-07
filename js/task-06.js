@@ -16,8 +16,7 @@ inputRef.addEventListener('blur', validation);
 
 function validation () {
   if (
-    Number(inputRef.value.length) ===
-    Number(inputRef.dataset.length)
+    Number(inputRef.value.length) === Number(inputRef.dataset.length)
   ) {
     inputRef.classList.add('valid');
     inputRef.classList.remove('invalid');
